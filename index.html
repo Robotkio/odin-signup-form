@@ -9,43 +9,43 @@
 <body>
     <div id="splash-pane">
         <div>
-            <div><img src="img/odin-lined.png" alt="Cartoon Odin face with Odin written beside it."></div>
+            <div><img id="logo" src="img/odin-lined.png" alt="Cartoon Odin face with Odin written beside it."></div>
         </div>
         <div>
-            <p>Photo by <a href="https://unsplash.com/@haliewestphoto">Halie West</a> on <a href="https://unsplash.com/photos/green-leaf-plant-in-close-up-photography-25xggax4bSA">Unsplash</a></p>
+            <p id="image-credit">Photo by <a href="https://unsplash.com/@haliewestphoto">Halie West</a> on <a href="https://unsplash.com/photos/green-leaf-plant-in-close-up-photography-25xggax4bSA">Unsplash</a></p>
         </div>
     </div>
     <div id="content-pane">
         <p>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. Sign up <em>now</em> to get started.</p>
         <p>You <em>know</em> you want to.</p>
 
-        <form action="#">
+        <form action="#" method="POST">
             <section>
                 <p>Lets do this!</p>
-                <p>
+                <div>
                     <label for="first-name">FIRST NAME</label>
-                    <input id="first-name" type="text">
-                </p>
-                <p>
+                    <input id="first-name" type="text" minlength="2">
+                </div>
+                <div>
                     <label for="last-name">LAST NAME</label>
-                    <input id="last-name" type="text">
-                </p>
-                <p>
+                    <input id="last-name" type="text" minlength="2">
+                </div>
+                <div>
                     <label for="email">EMAIL</label>
-                    <input id="email" type="text">
-                </p>
-                <p>
+                    <input id="email" type="email" pattern=".+@.+" required>
+                </div>
+                <div>
                     <label for="phone-number">PHONE NUMBER</label>
-                    <input id="phone-number" type="text">
-                </p>
-                <p>
+                    <input id="phone-number" type="number" required>
+                </div>
+                <div>
                     <label for="password">PASSWORD</label>
-                    <input id="password" type="text">
-                </p>
-                <p>
+                    <input id="password" type="password" required>
+                </div>
+                <div>
                     <label for="confirm-password">CONFIRM PASSWORD</label>
-                    <input id="confirm-password" type="text">
-                </p>
+                    <input id="confirm-password" type="password" required>
+                </div>
             </section>
             <button type="submit">Create Account</button>
         </form>
