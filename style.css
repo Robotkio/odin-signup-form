@@ -1,3 +1,75 @@
+@font-face {
+    font-family: odin;
+    src: url(font/Norse-Bold.otf);
+}
+
 body {
+    min-height: 100vh;
     background-color: grey;
+    display: flex;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* splash pane */
+
+#splash-pane {
+    color: white;
+    background: no-repeat url("img/ferns.jpg");
+    background-position: center;
+    background-size: cover;
+    min-height: 100%;
+    flex: 2;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#splash-pane div:nth-child(1) {
+    flex: 1 0 0;
+}
+
+#logo-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    flex: 0 0 0;
+    padding: 10px;
+    background-color: rgba(0,0,0,0.5);
+}
+
+#logo {
+    width: 80px;
+}
+
+#logo-box p {
+    font-family: odin, Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 80px;
+    margin: 0;
+}
+#splash-pane div:nth-child(3) {
+    flex: 2 0 0;
+}
+
+#image-credit {
+    text-align: center;
+    margin: 10px 0px;
+}
+
+#splash-pane a {
+    color: inherit;
+}
+
+
+/* content-pane */
+
+#content-pane {
+    background-color: slategray;
+    flex: 3;
+}
+
+form button {
+    background-color: #596D48;
 }
